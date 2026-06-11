@@ -2687,13 +2687,15 @@
     const preferredDate = formData.get("preferredDate") || "";
     const details = formData.get("details") || "";
 
-    const message = `
-INLINE 5 AUTO INC Service Request
+const message = `
+This is a service request sent from inline5autoinc.ca.
 
-Customer:
+A customer has submitted the following vehicle service request:
+
+Customer Name:
 ${customerName}
 
-Phone:
+Phone Number:
 ${customerPhone}
 
 Vehicle:
@@ -2702,14 +2704,18 @@ ${vehicleYear} ${vehicleMake} ${vehicleModel}
 Main Issue:
 ${mainIssue}
 
-Driveable:
+Is the vehicle currently driveable?
 ${driveable}
 
-Preferred Date:
+Preferred Service Date:
 ${preferredDate || "No preferred date selected"}
 
-Details:
-${details || "No extra details provided"}
+Additional Details:
+${details || "No additional details provided"}
+
+Please review the request and follow up with the customer when available.
+
+INLINE 5 AUTO INC
     `.trim();
 
 const shopNumber = "16479997499";
