@@ -5,13 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>INLINE 5 AUTO INC | Auto Repair Shop in Scarborough, ON</title>
-  <meta
-    name="description"
-    content="INLINE 5 AUTO INC provides certified auto repair, diagnostics, brake service, oil changes, tire service, suspension repair and maintenance in Scarborough, ON. Request service by WhatsApp or call 647-895-8103."
-  />
+<meta
+  name="description"
+  content="INLINE 5 AUTO INC provides certified auto repair, diagnostics, brake service, oil changes, tire service, suspension repair and maintenance in Scarborough, ON. Request service online or call 647-895-8103."
+/>
 
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#070707" />
+  <link rel="canonical" href="https://inline5autoinc.ca/" />
+
+<meta property="og:url" content="https://inline5autoinc.ca/" />
+<meta property="og:site_name" content="INLINE 5 AUTO INC" />
+<meta property="og:image" content="https://inline5autoinc.ca/assets/imgs/Inline5autocard.png" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="INLINE 5 AUTO INC | Auto Repair Shop in Scarborough, ON" />
+<meta
+  name="twitter:description"
+  content="Certified auto repair, diagnostics, brake service, oil changes, tires, suspension repair and honest maintenance in Scarborough."
+/>
+<meta name="twitter:image" content="https://inline5autoinc.ca/assets/imgs/Inline5autocard.png" />
 
   <meta property="og:title" content="INLINE 5 AUTO INC | Auto Repair Shop in Scarborough, ON" />
   <meta
@@ -19,15 +32,15 @@
     content="Certified auto repair, diagnostics, brake service, oil changes, tires, suspension repair and honest maintenance in Scarborough."
   />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="./assets/imgs/Inline5autocard.png" />
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "AutoRepair",
-    "name": "INLINE 5 AUTO INC",
-    "image": "./assets/imgs/Inline5autocard.png",
-    "telephone": "+1-647-895-8103",
+ "name": "INLINE 5 AUTO INC",
+"url": "https://inline5autoinc.ca/",
+"image": "https://inline5autoinc.ca/assets/imgs/Inline5autocard.png",
+"telephone": "+1-647-895-8103",
     "priceRange": "$$",
     "founder": "Suthan M.",
     "address": {
@@ -858,7 +871,7 @@
   }
 
   to {
-    transform: translateX(-50%);
+    transform: translateX(calc(-100% + 100vw));
   }
 }
     .process {
@@ -2063,10 +2076,9 @@
           <div class="service-request-copy">
             <div class="eyebrow">Service Request</div>
             <h2 class="section-title">Tell Us What’s Going On</h2>
-            <p class="section-copy light-copy">
-              Fill out the form and send your vehicle details through WhatsApp. The message will open pre-filled,
-              and you can tap send to submit it.
-            </p>
+          <p class="section-copy light-copy">
+  Fill out the form with your vehicle details, symptoms, and preferred date. Your request will be sent directly to Suthan so the shop can follow up with you.
+</p>
 
             <div class="request-notes">
               <div>
@@ -2086,7 +2098,7 @@
             </div>
           </div>
 
-          <form class="request-form" id="whatsappServiceForm">
+       <form class="request-form" id="serviceRequestForm">
             <div class="form-row">
               <label for="customerName">Your Name</label>
               <input id="customerName" name="customerName" type="text" placeholder="Your name" required>
@@ -2149,13 +2161,13 @@
               <textarea id="details" name="details" rows="5" placeholder="Example: Check engine light came on yesterday. Car shakes at idle. Happens more when stopped at red lights."></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary form-submit">
-              Send Request On WhatsApp
-            </button>
+          <button type="submit" class="btn btn-primary form-submit">
+  Send Service Request
+</button>
 
-            <p class="form-disclaimer">
-              This opens WhatsApp with your service request pre-filled. Please tap send in WhatsApp to submit it.
-            </p>
+<p class="form-disclaimer">
+  After you submit, a message will open with your request details ready to send to the shop.
+</p>
           </form>
         </div>
       </div>
@@ -2495,7 +2507,7 @@
         <div class="faq-grid">
           <article class="faq-item">
             <h3>Do I Need An Appointment?</h3>
-            <p>It is best to call or send a WhatsApp request before coming in so the shop can plan around your vehicle issue.</p>
+            service<p>It is best to call or send a service request before coming in so the shop can plan around your vehicle issue.</p>RequestForm
           </article>
 
           <article class="faq-item">
@@ -2505,7 +2517,7 @@
 
           <article class="faq-item">
             <h3>Can I Describe The Issue First?</h3>
-            <p>Yes. Use the service request form to send the vehicle details, symptoms, and preferred date through WhatsApp.</p>
+            <p>Yes. Use the service request form to send the vehicle details, symptoms, and preferred date directly to the shop.</p>
           </article>
 
           <article class="faq-item">
@@ -2576,7 +2588,7 @@
         <div class="cta-copy">
           <div class="eyebrow">Ready To Book?</div>
           <h2>Need Your Vehicle Looked At?</h2>
-          <p>Send a service request on WhatsApp or call the shop directly.</p>
+    <p>Send a service request or call the shop directly.</p>
         </div>
 
         <div class="cta-contact">
@@ -2629,7 +2641,7 @@
     const header = document.getElementById("header");
     const menuToggle = document.getElementById("menuToggle");
     const mobilePanel = document.getElementById("mobilePanel");
-    const whatsappServiceForm = document.getElementById("whatsappServiceForm");
+  const serviceRequestForm = document.getElementById("serviceRequestForm");
 
     function updateHeaderState() {
       header.classList.toggle("scrolled", window.scrollY > 20);
@@ -2659,27 +2671,30 @@
       }
     });
 
-    if (whatsappServiceForm) {
-      whatsappServiceForm.addEventListener("submit", (event) => {
-        event.preventDefault();
+    if (serviceRequestForm) {
+  serviceRequestForm.addEventListener("submit", (event) => {
+    event.preventDefault();
 
-        const formData = new FormData(whatsappServiceForm);
+    const formData = new FormData(serviceRequestForm);
 
-        const customerName = formData.get("customerName") || "";
-        const customerPhone = formData.get("customerPhone") || "";
-        const vehicleYear = formData.get("vehicleYear") || "";
-        const vehicleMake = formData.get("vehicleMake") || "";
-        const vehicleModel = formData.get("vehicleModel") || "";
-        const mainIssue = formData.get("mainIssue") || "";
-        const driveable = formData.get("driveable") || "";
-        const preferredDate = formData.get("preferredDate") || "";
-        const details = formData.get("details") || "";
+    const customerName = formData.get("customerName") || "";
+    const customerPhone = formData.get("customerPhone") || "";
+    const vehicleYear = formData.get("vehicleYear") || "";
+    const vehicleMake = formData.get("vehicleMake") || "";
+    const vehicleModel = formData.get("vehicleModel") || "";
+    const mainIssue = formData.get("mainIssue") || "";
+    const driveable = formData.get("driveable") || "";
+    const preferredDate = formData.get("preferredDate") || "";
+    const details = formData.get("details") || "";
 
-        const message = `
+    const message = `
 INLINE 5 AUTO INC Service Request
 
-Name: ${customerName}
-Phone: ${customerPhone}
+Customer:
+${customerName}
+
+Phone:
+${customerPhone}
 
 Vehicle:
 ${vehicleYear} ${vehicleMake} ${vehicleModel}
@@ -2695,14 +2710,14 @@ ${preferredDate || "No preferred date selected"}
 
 Details:
 ${details || "No extra details provided"}
-        `.trim();
+    `.trim();
 
-        const whatsappNumber = "16478958103";
-        const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    const shopNumber = "16478958103";
+    const requestUrl = `https://wa.me/${shopNumber}?text=${encodeURIComponent(message)}`;
 
-        window.open(whatsappUrl, "_blank", "noopener,noreferrer");
-      });
-    }
+    window.open(requestUrl, "_blank", "noopener,noreferrer");
+  });
+}
   </script>
 </body>
 </html>
