@@ -8,13 +8,14 @@
   <link rel="shortcut icon" href="/assets/imgs/inline5.svg" type="image/svg+xml" />
 
   <title>Audi Service Scarborough | INLINE 5 AUTO INC</title>
+
   <meta
     name="description"
     content="INLINE 5 AUTO INC provides Audi service, diagnostics, oil changes, brake service, suspension repair and maintenance in Scarborough, Ontario. Call Suthan M. at 647-895-8103."
   />
 
   <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#070707" />
+  <meta name="theme-color" content="#050914" />
   <link rel="canonical" href="https://inline5autoinc.ca/audi-service-scarborough.html" />
 
   <meta property="og:title" content="Audi Service Scarborough | INLINE 5 AUTO INC" />
@@ -23,6 +24,13 @@
   <meta property="og:url" content="https://inline5autoinc.ca/audi-service-scarborough.html" />
   <meta property="og:site_name" content="INLINE 5 AUTO INC" />
   <meta property="og:image" content="https://inline5autoinc.ca/assets/imgs/Inline5autocard.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Audi Service Scarborough | INLINE 5 AUTO INC" />
+  <meta name="twitter:description" content="Audi diagnostics, maintenance, brake service, oil changes and repair support in Scarborough, Ontario." />
+  <meta name="twitter:image" content="https://inline5autoinc.ca/assets/imgs/Inline5autocard.png" />
+
+  <link rel="stylesheet" href="./assets/css/styles.css" />
 
   <script type="application/ld+json">
   {
@@ -50,623 +58,493 @@
     "url": "https://inline5autoinc.ca/audi-service-scarborough.html"
   }
   </script>
-
-  <style>
-    :root {
-      --bg: #070707;
-      --text: #f7f7f2;
-      --muted: #a8aaa7;
-      --red: #c83a32;
-      --red-bright: #d84840;
-      --off: #e7e3dc;
-      --stone-soft: #efede8;
-      --card-light: #f7f5f0;
-      --dark-text: #121212;
-      --line-light: #c9c3b8;
-      --container: 1180px;
-      --shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.5;
-      overflow-x: hidden;
-    }
-
-    img {
-      width: 100%;
-      display: block;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .container {
-      width: min(var(--container), calc(100% - 40px));
-      margin: 0 auto;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      border: 1px solid transparent;
-      padding: 15px 22px;
-      font-size: 12px;
-      line-height: 1;
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: 0.03em;
-      cursor: pointer;
-      transition: 0.25s ease;
-      white-space: nowrap;
-    }
-
-    .btn-primary {
-      background: var(--red);
-      color: white;
-      box-shadow: 0 18px 40px rgba(200, 58, 50, 0.24);
-    }
-
-    .btn-primary:hover {
-      background: var(--red-bright);
-      transform: translateY(-2px);
-    }
-
-    .btn-outline {
-      border-color: rgba(255, 255, 255, 0.28);
-      color: white;
-      background: rgba(255, 255, 255, 0.02);
-    }
-
-    .btn-outline:hover {
-      background: white;
-      color: black;
-    }
-
-    .eyebrow {
-      color: var(--red);
-      font-size: 13px;
-      font-weight: 900;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      margin-bottom: 10px;
-    }
-
-    .section-title {
-      font-size: clamp(34px, 5vw, 64px);
-      line-height: 0.95;
-      letter-spacing: -0.06em;
-      text-transform: uppercase;
-      font-weight: 950;
-    }
-
-    .section-copy {
-      color: var(--muted);
-      max-width: 680px;
-      margin-top: 16px;
-      font-size: 16px;
-    }
-
-    .header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 50;
-      background: rgba(7, 7, 7, 0.96);
-      backdrop-filter: blur(18px);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    .nav {
-      height: 82px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 26px;
-    }
-
-    .brand strong {
-      display: block;
-      color: white;
-      font-size: 20px;
-      line-height: 0.9;
-      letter-spacing: -0.04em;
-      text-transform: uppercase;
-    }
-
-    .brand span {
-      display: block;
-      color: var(--red);
-      font-size: 12px;
-      font-weight: 900;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      margin-top: 5px;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 24px;
-      margin-left: auto;
-    }
-
-    .nav-links a {
-      color: white;
-      font-size: 12px;
-      font-weight: 900;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-      opacity: 0.92;
-    }
-
-    .hero {
-      min-height: 740px;
-      position: relative;
-      display: flex;
-      align-items: center;
-      overflow: hidden;
-      isolation: isolate;
-      background: #060606;
-      padding-top: 90px;
-    }
-
-    .hero::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        linear-gradient(90deg, rgba(0, 0, 0, 0.97) 0%, rgba(0, 0, 0, 0.86) 42%, rgba(0, 0, 0, 0.28) 75%, rgba(0, 0, 0, 0.82) 100%),
-        linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.92));
-      z-index: -1;
-    }
-
-    .hero::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background-image:
-        radial-gradient(circle at 18% 30%, rgba(200, 58, 50, 0.18), transparent 28%),
-        linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
-      background-size: auto, 90px 90px, 90px 90px;
-      z-index: -1;
-      opacity: 0.65;
-    }
-
-    .hero-bg {
-      position: absolute;
-      inset: 0;
-      z-index: -2;
-    }
-
-    .hero-bg img {
-      height: 100%;
-      object-fit: cover;
-      object-position: center right;
-      filter: saturate(0.95) contrast(1.08) brightness(0.82);
-    }
-
-    .hero-content {
-      max-width: 760px;
-    }
-
-    .hero h1 {
-      font-size: clamp(58px, 8vw, 112px);
-      line-height: 0.86;
-      letter-spacing: -0.08em;
-      text-transform: uppercase;
-      font-weight: 1000;
-    }
-
-    .hero h1 span {
-      color: var(--red);
-      display: block;
-    }
-
-    .hero p {
-      color: rgba(255, 255, 255, 0.78);
-      max-width: 640px;
-      font-size: 18px;
-      margin: 22px 0 30px;
-    }
-
-    .hero-buttons {
-      display: flex;
-      gap: 14px;
-      flex-wrap: wrap;
-    }
-
-    .section-light {
-      background: var(--off);
-      color: var(--dark-text);
-      padding: 78px 0;
-    }
-
-    .section-dark {
-      background:
-        radial-gradient(circle at 18% 20%, rgba(200, 58, 50, 0.12), transparent 32%),
-        linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
-        #080808;
-      background-size: auto, 84px 84px, 84px 84px;
-      padding: 78px 0;
-      color: white;
-    }
-
-    .grid-3 {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      border: 1px solid var(--line-light);
-      margin-top: 34px;
-      background: var(--card-light);
-    }
-
-    .card {
-      padding: 30px 26px;
-      border-right: 1px solid var(--line-light);
-      border-bottom: 1px solid var(--line-light);
-      min-height: 220px;
-    }
-
-    .card:nth-child(3n) {
-      border-right: 0;
-    }
-
-    .card:nth-last-child(-n+3) {
-      border-bottom: 0;
-    }
-
-    .card h3 {
-      font-size: 15px;
-      line-height: 1.15;
-      text-transform: uppercase;
-      font-weight: 950;
-      margin-bottom: 12px;
-    }
-
-    .card p {
-      color: #555;
-      font-size: 14px;
-      line-height: 1.58;
-    }
-
-    .split {
-      display: grid;
-      grid-template-columns: 0.95fr 1.05fr;
-      gap: 34px;
-      align-items: center;
-    }
-
-    .panel {
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.035));
-      padding: 34px;
-      box-shadow: var(--shadow);
-    }
-
-    .panel h3 {
-      font-size: clamp(30px, 4vw, 52px);
-      line-height: 0.95;
-      letter-spacing: -0.06em;
-      text-transform: uppercase;
-      font-weight: 1000;
-      margin-bottom: 14px;
-    }
-
-    .panel p {
-      color: rgba(255, 255, 255, 0.7);
-      margin-bottom: 22px;
-    }
-
-    .check-list {
-      display: grid;
-      gap: 14px;
-      margin-top: 26px;
-    }
-
-    .check-list li {
-      list-style: none;
-      display: flex;
-      gap: 12px;
-      color: rgba(255, 255, 255, 0.78);
-      font-size: 15px;
-    }
-
-    .check-list li::before {
-      content: "✓";
-      color: var(--red);
-      font-weight: 900;
-    }
-
-    .contact-strip {
-      background: var(--stone-soft);
-      color: var(--dark-text);
-      padding: 58px 0;
-    }
-
-    .contact-box {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      align-items: center;
-      gap: 24px;
-      background: var(--card-light);
-      border: 1px solid var(--line-light);
-      padding: 34px;
-    }
-
-    .contact-box h2 {
-      font-size: clamp(30px, 4vw, 52px);
-      line-height: 0.95;
-      letter-spacing: -0.06em;
-      text-transform: uppercase;
-      font-weight: 1000;
-    }
-
-    .contact-box p {
-      color: #555;
-      margin-top: 12px;
-    }
-
-    .footer {
-      background: #070707;
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
-      padding: 26px 0;
-      color: rgba(255, 255, 255, 0.48);
-      font-size: 12px;
-    }
-
-    .footer a {
-      color: rgba(255, 255, 255, 0.72);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-    }
-
-    @media (max-width: 900px) {
-      .nav-links {
-        display: none;
-      }
-
-      .hero {
-        min-height: auto;
-        padding: 120px 0 70px;
-      }
-
-      .hero-bg img {
-        object-position: 68% center;
-        opacity: 0.78;
-      }
-
-      .hero h1 {
-        font-size: clamp(48px, 15vw, 72px);
-      }
-
-      .grid-3,
-      .split,
-      .contact-box {
-        grid-template-columns: 1fr;
-      }
-
-      .card,
-      .card:nth-child(3n) {
-        border-right: 0;
-      }
-
-      .card {
-        border-bottom: 1px solid var(--line-light);
-      }
-
-      .card:last-child {
-        border-bottom: 0;
-      }
-
-      .section-light,
-      .section-dark {
-        padding: 56px 0;
-      }
-
-      .hero-buttons {
-        display: grid;
-        grid-template-columns: 1fr;
-      }
-
-      .btn {
-        width: 100%;
-      }
-    }
-  </style>
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <div class="container nav">
       <a href="/" class="brand" aria-label="INLINE 5 AUTO INC Home">
-        <strong>INLINE 5</strong>
-        <span>Auto Inc</span>
+        <span class="brand-text">
+          <strong>INLINE 5</strong>
+          <span>Auto Inc</span>
+        </span>
       </a>
 
       <nav class="nav-links" aria-label="Primary navigation">
         <a href="/">Home</a>
         <a href="/#about">About</a>
         <a href="/#services">Services</a>
-        <a href="/#service-request">Request Service</a>
+        <a href="index.html#service-request">Request Service</a>
         <a href="/#reviews">Reviews</a>
         <a href="/#location">Location</a>
       </nav>
 
-      <a class="btn btn-primary" href="/#service-request">Request Service</a>
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="index.html#service-request">Request Service</a>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobilePanel"
+        >
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-panel" id="mobilePanel">
+      <a href="/">Home</a>
+      <a href="/#about">About</a>
+      <a href="/#services">Services</a>
+      <a href="index.html#service-request">Request Service</a>
+      <a href="/#reviews">Reviews</a>
+      <a href="/#location">Location</a>
+      <a href="tel:16478958103">Call 647-895-8103</a>
     </div>
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero" id="home">
       <div class="hero-bg">
         <img
-          src="./assets/imgs/heroimage.png"
-          alt="Audi service and auto repair garage in Scarborough"
+          src="./assets/imgs/hero-audi-workshop.png"
+          alt="Audi in a professional workshop at Inline 5 Auto Inc"
           fetchpriority="high"
         />
       </div>
 
       <div class="container">
         <div class="hero-content">
-          <div class="eyebrow">Audi Service Scarborough</div>
+          <div class="hero-kicker">Audi Service Scarborough</div>
+
           <h1>Audi Service. <span>Done Right.</span></h1>
+
           <p>
             INLINE 5 AUTO INC provides Audi maintenance, diagnostics, brake service,
             oil changes, suspension repair, and practical repair advice for Audi drivers
             across Scarborough, Ontario.
           </p>
 
+          <p class="hero-seo-line">
+            Audi diagnostics, Audi brake service, Audi oil changes, suspension repairs,
+            and general Audi maintenance in Scarborough.
+          </p>
+
           <div class="hero-buttons">
-            <a href="/#service-request" class="btn btn-primary">Request Audi Service</a>
+            <a href="index.html#service-request" class="btn btn-primary">Request Audi Service</a>
             <a href="tel:16478958103" class="btn btn-outline">Call 647-895-8103</a>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=1570+Midland+Ave+Unit+3+Scarborough+ON"
+              class="btn btn-outline"
+              target="_blank"
+              rel="noopener"
+            >
+              Get Directions
+            </a>
+          </div>
+
+          <div class="hero-contact-card">
+            <strong>Unit 3 - 1570 Midland Ave, Scarborough</strong>
+            <span>Monday to Friday: 9:00AM - 6:00PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="trust-strip">
+        <div class="trust-item">
+          <svg class="icon icon-red" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2l2.2 4.5 5 .7-3.6 3.5.9 5-4.5-2.4-4.5 2.4.9-5L4.8 7.2l5-.7L12 2z"></path>
+            <path d="M4 21h16"></path>
+          </svg>
+          <div>
+            <h3>Certified Technician</h3>
+            <p>Service led by Suthan M., a Certified Auto Service Technician.</p>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <svg class="icon icon-red" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M8 7h8l2 4v8H6v-8l2-4z"></path>
+            <path d="M9 7V4h6v3"></path>
+            <path d="M8 15h8"></path>
+            <path d="M10 19v2M14 19v2"></path>
+          </svg>
+          <div>
+            <h3>Audi Service</h3>
+            <p>Diagnostics, maintenance, brakes, suspension, and repair advice for Audi models.</p>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <svg class="icon icon-red" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 7h16v11H4z"></path>
+            <path d="M4 11h16"></path>
+            <path d="M8 15h3"></path>
+            <path d="M16 15h.01"></path>
+            <path d="M7 7V5h10v2"></path>
+          </svg>
+          <div>
+            <h3>Honest Advice</h3>
+            <p>Clear explanations before work begins so you understand what your Audi needs.</p>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <svg class="icon icon-red" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 3l8 4v5c0 5-3.4 8.5-8 9-4.6-.5-8-4-8-9V7l8-4z"></path>
+            <path d="M9 12l2 2 4-5"></path>
+          </svg>
+          <div>
+            <h3>Scarborough Shop</h3>
+            <p>Located at Unit 3 - 1570 Midland Ave for local Audi service and repairs.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section-light">
+    <section class="services">
       <div class="container">
-        <div class="eyebrow">Audi Repair & Maintenance</div>
-        <h2 class="section-title">Trusted Audi Care In Scarborough</h2>
-        <p class="section-copy" style="color:#555;">
-          Audi vehicles require careful diagnostics, proper maintenance, and clear communication.
-          At INLINE 5 AUTO INC, Suthan M. helps Audi owners understand what their vehicle needs
-          before repair work begins.
-        </p>
-
-        <div class="grid-3">
-          <article class="card">
-            <h3>Audi Diagnostics</h3>
-            <p>Warning lights, scan tool checks, rough idle, performance concerns, electrical issues, and troubleshooting.</p>
-          </article>
-
-          <article class="card">
-            <h3>Oil Changes & Maintenance</h3>
-            <p>Oil service, filters, fluid checks, regular maintenance, and service recommendations for Audi models.</p>
-          </article>
-
-          <article class="card">
-            <h3>Audi Brake Service</h3>
-            <p>Brake pads, rotors, calipers, inspections, brake noise concerns, and safety-focused repair advice.</p>
-          </article>
-
-          <article class="card">
-            <h3>Suspension & Steering</h3>
-            <p>Ride quality issues, control arms, shocks, struts, steering concerns, and suspension-related repairs.</p>
-          </article>
-
-          <article class="card">
-            <h3>Engine Performance</h3>
-            <p>Loss of power, misfires, leaks, unusual noises, check engine lights, and drivability concerns.</p>
-          </article>
-
-          <article class="card">
-            <h3>Honest Repair Advice</h3>
-            <p>Clear explanations, practical recommendations, and repairs based on what your Audi actually needs.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-dark">
-      <div class="container split">
-        <div>
-          <div class="eyebrow">Why Audi Drivers Choose INLINE 5</div>
-          <h2 class="section-title">Specialized Attention Without Dealership Pressure</h2>
-          <p class="section-copy">
-            Whether your Audi needs regular service or deeper diagnostics, the goal is simple:
-            identify the issue properly, explain the repair clearly, and complete the work with care.
-          </p>
-
-          <ul class="check-list">
-            <li>Service led by Suthan M., Certified Auto Service Technician.</li>
-            <li>Support for Audi maintenance, diagnostics, brakes, suspension, and repair concerns.</li>
-            <li>Clear explanations before work begins.</li>
-            <li>Located at Unit 3 - 1570 Midland Ave in Scarborough.</li>
-          </ul>
-        </div>
-
-        <div class="panel">
-          <h3>Need Audi Service?</h3>
-          <p>
-            Tell us what is happening with your vehicle and the shop will follow up.
-            For urgent concerns, call the shop directly before driving in.
-          </p>
-
-          <a href="/#service-request" class="btn btn-primary">Send Service Request</a>
-          <a href="tel:16478958103" class="btn btn-outline" style="margin-top:12px;">Call The Shop</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-light">
-      <div class="container">
-        <div class="eyebrow">Common Audi Service Questions</div>
-        <h2 class="section-title">Before You Bring It In</h2>
-
-        <div class="grid-3">
-          <article class="card">
-            <h3>Can You Diagnose My Audi Warning Light?</h3>
-            <p>Yes. Include the warning light, when it appeared, and any symptoms in the service request form.</p>
-          </article>
-
-          <article class="card">
-            <h3>Should I Drive If The Vehicle Feels Unsafe?</h3>
-            <p>If the vehicle feels unsafe, call the shop first. Some issues may require towing or immediate inspection.</p>
-          </article>
-
-          <article class="card">
-            <h3>What Details Should I Send?</h3>
-            <p>Include your Audi year, model, symptoms, sounds, leaks, warning lights, and when the issue started.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact-strip">
-      <div class="container">
-        <div class="contact-box">
+        <div class="section-head-row">
           <div>
-            <div class="eyebrow">Book Audi Service</div>
-            <h2>Request Service With INLINE 5 AUTO INC</h2>
-            <p>
-              Audi service, diagnostics, maintenance, brake work, and repair support in Scarborough, Ontario.
-              Call Suthan M. at 647-895-8103.
+            <div class="eyebrow">Audi Repair & Maintenance</div>
+            <h2 class="section-title">Trusted Audi Care In Scarborough</h2>
+
+            <p class="section-copy light-copy">
+              Audi vehicles need careful diagnostics, proper maintenance, and clear communication.
+              At INLINE 5 AUTO INC, Suthan M. helps Audi owners understand what their vehicle needs
+              before repair work begins.
             </p>
           </div>
 
+          <a href="index.html#service-request" class="btn btn-primary">Request Service</a>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <h3>Audi Diagnostics</h3>
+            <p>Warning lights, scan tool checks, rough idle, performance concerns, electrical issues, and troubleshooting.</p>
+            <a href="index.html#service-request" class="learn-link">Request Service →</a>
+          </article>
+
+          <article class="service-card">
+            <h3>Oil Changes & Maintenance</h3>
+            <p>Oil service, filters, fluid checks, regular maintenance, and service recommendations for Audi models.</p>
+            <a href="index.html#service-request" class="learn-link">Request Service →</a>
+          </article>
+
+          <article class="service-card">
+            <h3>Audi Brake Service</h3>
+            <p>Brake pads, rotors, calipers, inspections, brake noise concerns, and safety-focused repair advice.</p>
+            <a href="index.html#service-request" class="learn-link">Request Service →</a>
+          </article>
+
+          <article class="service-card">
+            <h3>Suspension & Steering</h3>
+            <p>Ride quality issues, control arms, shocks, struts, steering concerns, and suspension-related repairs.</p>
+            <a href="index.html#service-request" class="learn-link">Request Service →</a>
+          </article>
+
+          <article class="service-card">
+            <h3>Engine Performance</h3>
+            <p>Loss of power, misfires, leaks, unusual noises, check engine lights, and drivability concerns.</p>
+            <a href="index.html#service-request" class="learn-link">Request Service →</a>
+          </article>
+
+          <article class="service-card">
+            <h3>Honest Repair Advice</h3>
+            <p>Clear explanations, practical recommendations, and repairs based on what your Audi actually needs.</p>
+            <a href="index.html#service-request" class="learn-link">Request Service →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="brand-banner brand-marquee" aria-label="European brands serviced">
+      <div class="banner-title container">
+        <span></span>
+        <strong>We service & repair leading European brands</strong>
+        <span></span>
+      </div>
+
+      <div class="brand-marquee-window">
+        <div class="brand-marquee-track">
+          <div class="brand-logo audi-logo">
+            <img src="./assets/imgs/audi.png" alt="Audi repair and service in Scarborough" />
+          </div>
+
+          <div class="brand-logo bmw-logo">
+            <img src="./assets/imgs/bmw.png" alt="BMW repair and service in Scarborough" />
+          </div>
+
+          <div class="brand-logo mercedes-logo">
+            <img src="./assets/imgs/mercedes.png" alt="Mercedes-Benz repair and service in Scarborough" />
+          </div>
+
+          <div class="brand-logo volkswagen-logo">
+            <img src="./assets/imgs/volkswagen.png" alt="Volkswagen repair and service in Scarborough" />
+          </div>
+
+          <div class="brand-logo volvo-logo">
+            <img src="./assets/imgs/volvo.png" alt="Volvo repair and service in Scarborough" />
+          </div>
+
+          <div class="brand-logo mini-logo">
+            <img src="./assets/imgs/minicooper.png" alt="MINI Cooper repair and service in Scarborough" />
+          </div>
+
+          <div class="brand-logo landrover-logo">
+            <img src="./assets/imgs/landrover.png" alt="Land Rover repair and service in Scarborough" />
+          </div>
+
+          <div class="brand-logo jaguar-logo">
+            <img src="./assets/imgs/jaguar.png" alt="Jaguar repair and service in Scarborough" />
+          </div>
+
+          <div class="brand-logo porsche-logo">
+            <img src="./assets/imgs/porche.png" alt="Porsche repair and service in Scarborough" />
+          </div>
+
+          <div class="brand-logo audi-logo" aria-hidden="true">
+            <img src="./assets/imgs/audi.png" alt="" />
+          </div>
+
+          <div class="brand-logo bmw-logo" aria-hidden="true">
+            <img src="./assets/imgs/bmw.png" alt="" />
+          </div>
+
+          <div class="brand-logo mercedes-logo" aria-hidden="true">
+            <img src="./assets/imgs/mercedes.png" alt="" />
+          </div>
+
+          <div class="brand-logo volkswagen-logo" aria-hidden="true">
+            <img src="./assets/imgs/volkswagen.png" alt="" />
+          </div>
+
+          <div class="brand-logo volvo-logo" aria-hidden="true">
+            <img src="./assets/imgs/volvo.png" alt="" />
+          </div>
+
+          <div class="brand-logo mini-logo" aria-hidden="true">
+            <img src="./assets/imgs/minicooper.png" alt="" />
+          </div>
+
+          <div class="brand-logo landrover-logo" aria-hidden="true">
+            <img src="./assets/imgs/landrover.png" alt="" />
+          </div>
+
+          <div class="brand-logo jaguar-logo" aria-hidden="true">
+            <img src="./assets/imgs/jaguar.png" alt="" />
+          </div>
+
+          <div class="brand-logo porsche-logo" aria-hidden="true">
+            <img src="./assets/imgs/porche.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <p class="make-disclaimer container">
+        Brand logos are used only to identify vehicle makes serviced. INLINE 5 AUTO INC is an independent auto repair shop and is not affiliated with or endorsed by these manufacturers.
+      </p>
+    </section>
+
+    <section class="reviews">
+      <div class="container">
+        <div class="center-head">
+          <div class="eyebrow">Why Audi Drivers Choose INLINE 5</div>
+          <h2 class="section-title">Specialized Attention Without Dealership Pressure</h2>
+
+          <p class="section-copy" style="margin-left:auto;margin-right:auto;">
+            Whether your Audi needs regular service or deeper diagnostics, the goal is simple:
+            identify the issue properly, explain the repair clearly, and complete the work with care.
+          </p>
+        </div>
+
+        <div class="review-grid">
+          <article class="review-card">
+            <div class="quote-mark">✓</div>
+            <p>Service led by Suthan M., a Certified Auto Service Technician with strong diagnostic and repair experience.</p>
+            <strong>Certified Service</strong>
+            <small>Professional Audi support</small>
+          </article>
+
+          <article class="review-card">
+            <div class="quote-mark">✓</div>
+            <p>Support for Audi maintenance, diagnostics, brakes, suspension, engine concerns, and repair recommendations.</p>
+            <strong>Audi-Focused Repairs</strong>
+            <small>Maintenance and diagnostics</small>
+          </article>
+
+          <article class="review-card">
+            <div class="quote-mark">✓</div>
+            <p>Clear explanations before work begins, so you know what is urgent, what can wait, and what the vehicle actually needs.</p>
+            <strong>Honest Communication</strong>
+            <small>No unnecessary pressure</small>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container">
+        <div class="section-head-row">
           <div>
-            <a href="/#service-request" class="btn btn-primary">Request Service</a>
-            <a href="tel:16478958103" class="btn" style="margin-top:12px;background:#080808;color:#fff;">Call Shop</a>
+            <div class="eyebrow">Common Audi Service Questions</div>
+            <h2 class="section-title">Before You Bring It In</h2>
+            <p class="section-copy light-copy">
+              Send clear details about your Audi so the shop can understand the concern before following up.
+            </p>
+          </div>
+
+          <a href="index.html#service-request" class="btn btn-primary">Book Audi Service</a>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <h3>Can You Diagnose My Audi Warning Light?</h3>
+            <p>Yes. Include the warning light, when it appeared, and any symptoms in the service request form.</p>
+            <a href="index.html#service-request" class="learn-link">Request Service →</a>
+          </article>
+
+          <article class="service-card">
+            <h3>Should I Drive If The Vehicle Feels Unsafe?</h3>
+            <p>If the vehicle feels unsafe, call the shop first. Some issues may require towing or immediate inspection.</p>
+            <a href="tel:16478958103" class="learn-link">Call Shop →</a>
+          </article>
+
+          <article class="service-card">
+            <h3>What Details Should I Send?</h3>
+            <p>Include your Audi year, model, symptoms, sounds, leaks, warning lights, and when the issue started.</p>
+            <a href="index.html#service-request" class="learn-link">Send Details →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-request">
+      <div class="container">
+        <div class="service-request-grid">
+          <div class="service-request-copy">
+            <div class="eyebrow">Book Audi Service</div>
+            <h2 class="section-title">Request Service With INLINE 5 AUTO INC</h2>
+
+            <p class="section-copy light-copy">
+              Audi service, diagnostics, maintenance, brake work, and repair support in Scarborough, Ontario.
+              Send a service request or call Suthan M. directly.
+            </p>
+
+            <div class="request-notes">
+              <div>
+                <strong>Shop Address</strong>
+                <span>Unit 3 - 1570 Midland Ave, Scarborough, ON</span>
+              </div>
+
+              <div>
+                <strong>Direct Phone</strong>
+                <span><a href="tel:16478958103" style="color:#1d6fff;font-weight:900;">647-895-8103</a></span>
+              </div>
+
+              <div>
+                <strong>Hours</strong>
+                <span>Monday to Friday: 9:00AM - 6:00PM</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="request-form">
+            <div class="form-row">
+              <label>Ready To Book?</label>
+              <p class="form-disclaimer" style="margin-top:0;">
+                Use the main service request form and include your Audi year, model, symptoms, warning lights, and preferred date.
+              </p>
+            </div>
+
+            <a href="index.html#service-request" class="btn btn-primary form-submit">Open Service Request Form</a>
+            <a href="tel:16478958103" class="btn btn-light-outline form-submit">Call The Shop</a>
+
+            <p class="form-disclaimer">
+              For urgent concerns or if the Audi feels unsafe to drive, call the shop before bringing it in.
+            </p>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer" id="contact">
     <div class="container">
-      © 2026 INLINE 5 AUTO INC. Unit 3 - 1570 Midland Ave, Scarborough, ON.
-      <a href="/">Back to Home</a>
+      <div class="footer-card-feature">
+        <div class="footer-card-copy">
+          <div class="eyebrow">Contact Inline 5 Auto Inc</div>
+          <h2>Book Your Audi Service</h2>
+          <p>
+            Certified auto repair, honest diagnostics, and dependable Audi and European vehicle service in Scarborough.
+          </p>
+          <a href="index.html#service-request" class="btn btn-primary">Send Service Request</a>
+        </div>
+
+        <div class="footer-business-card">
+          <img
+            src="./assets/imgs/Inline5autocard.png"
+            alt="INLINE 5 AUTO INC business card with contact details"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>
+          © 2026 INLINE 5 AUTO INC. All Rights Reserved.
+          Website by <a href="https://northfolkstudio.com" target="_blank" rel="noopener">NorthfolkStudio</a>.
+        </span>
+        <a href="/">Back to Home</a>
+      </div>
     </div>
   </footer>
+
+  <div class="mobile-call-bar">
+    <a href="tel:16478958103">Call Shop</a>
+    <a href="index.html#service-request">Request Service</a>
+  </div>
+
+  <script>
+    const header = document.getElementById("header");
+    const menuToggle = document.getElementById("menuToggle");
+    const mobilePanel = document.getElementById("mobilePanel");
+
+    function updateHeaderState() {
+      header.classList.toggle("scrolled", window.scrollY > 20);
+    }
+
+    updateHeaderState();
+
+    window.addEventListener("scroll", updateHeaderState, { passive: true });
+
+    if (menuToggle && mobilePanel) {
+      menuToggle.addEventListener("click", () => {
+        const isOpen = mobilePanel.classList.toggle("open");
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+      });
+
+      mobilePanel.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobilePanel.classList.remove("open");
+          menuToggle.setAttribute("aria-expanded", "false");
+        });
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && mobilePanel.classList.contains("open")) {
+          mobilePanel.classList.remove("open");
+          menuToggle.setAttribute("aria-expanded", "false");
+          menuToggle.focus();
+        }
+      });
+    }
+  </script>
 </body>
 </html>

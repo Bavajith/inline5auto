@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" href="/assets/imgs/inline5.svg" type="image/svg+xml" />
+  <link rel="shortcut icon" href="/assets/imgs/inline5.svg" type="image/svg+xml" />
+
+  <title>Gallery | European Auto Repair Scarborough | INLINE 5 AUTO INC</title>
+  <meta name="description" content="View a preview gallery for INLINE 5 AUTO INC featuring European vehicle service, diagnostics, brake work, tire service and repair placeholders for Scarborough customers." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#050914" />
+  <link rel="canonical" href="https://inline5autoinc.ca/gallery.html" />
+
+  <meta property="og:title" content="Gallery | INLINE 5 AUTO INC" />
+  <meta property="og:description" content="Preview gallery for European auto repair, diagnostics, brake service, tire service and maintenance in Scarborough." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://inline5autoinc.ca/gallery.html" />
+  <meta property="og:site_name" content="INLINE 5 AUTO INC" />
+  <meta property="og:image" content="https://inline5autoinc.ca/assets/imgs/Inline5autocard.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Gallery | INLINE 5 AUTO INC" />
+  <meta name="twitter:description" content="Preview gallery for European auto repair and service in Scarborough." />
+  <meta name="twitter:image" content="https://inline5autoinc.ca/assets/imgs/Inline5autocard.png" />
+
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+
+  <style>
+    .gallery-hero {
+      min-height: 560px;
+      padding: 124px 0 78px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      isolation: isolate;
+      background:
+        radial-gradient(circle at 18% 20%, rgba(29, 111, 255, 0.24), transparent 32%),
+        linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+        #050914;
+      background-size: auto, 84px 84px, 84px 84px;
+    }
+
+    .gallery-hero-content {
+      max-width: 760px;
+    }
+
+    .gallery-hero h1 {
+      font-size: clamp(52px, 7.4vw, 104px);
+      line-height: 0.88;
+      letter-spacing: -0.08em;
+      text-transform: uppercase;
+      font-weight: 1000;
+    }
+
+    .gallery-hero h1 span {
+      color: #4da5ff;
+      display: block;
+    }
+
+    .gallery-hero p {
+      color: rgba(255, 255, 255, 0.78);
+      max-width: 650px;
+      font-size: 18px;
+      line-height: 1.6;
+      margin: 22px 0 30px;
+    }
+
+    .gallery-section {
+      background: var(--off);
+      color: var(--dark-text);
+      padding: 78px 0;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-top: 34px;
+    }
+
+    .gallery-card {
+      background: #ffffff;
+      border: 1px solid var(--line-light);
+      overflow: hidden;
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+      transition: 0.25s ease;
+    }
+
+    .gallery-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 24px 65px rgba(0, 0, 0, 0.14);
+      border-color: rgba(29, 111, 255, 0.35);
+    }
+
+    .gallery-image {
+      aspect-ratio: 4 / 3;
+      background: #101827;
+      overflow: hidden;
+    }
+
+    .gallery-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.35s ease;
+    }
+
+    .gallery-card:hover img {
+      transform: scale(1.04);
+    }
+
+    .gallery-card-body {
+      padding: 18px;
+    }
+
+    .gallery-card-body h2 {
+      font-size: 13px;
+      line-height: 1.2;
+      text-transform: uppercase;
+      font-weight: 950;
+      margin-bottom: 6px;
+    }
+
+    .gallery-card-body p {
+      color: #4b5565;
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .gallery-note {
+      margin-top: 28px;
+      color: #64748b;
+      font-size: 12px;
+      line-height: 1.5;
+      max-width: 920px;
+    }
+
+    @media (max-width: 1100px) {
+      .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .gallery-hero {
+        min-height: auto;
+        padding: 118px 0 58px;
+      }
+
+      .gallery-hero h1 {
+        font-size: clamp(44px, 13vw, 68px);
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-section {
+        padding: 56px 0;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <header class="header" id="header">
+    <div class="container nav">
+      <a href="/" class="brand" aria-label="INLINE 5 AUTO INC Home">
+        <span class="brand-text">
+          <strong>INLINE 5</strong>
+          <span>Auto Inc</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="/">Home</a>
+        <a href="/#about">About</a>
+        <a href="/#services">Services</a>
+        <a href="/gallery.html">Gallery</a>
+        <a href="index.html#service-request">Request Service</a>
+        <a href="/#reviews">Reviews</a>
+        <a href="/#location">Location</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="index.html#service-request">Request Service</a>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobilePanel"
+        >
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-panel" id="mobilePanel">
+      <a href="/">Home</a>
+      <a href="/#about">About</a>
+      <a href="/#services">Services</a>
+      <a href="/gallery.html">Gallery</a>
+      <a href="index.html#service-request">Request Service</a>
+      <a href="/#reviews">Reviews</a>
+      <a href="/#location">Location</a>
+      <a href="tel:16478958103">Call 647-895-8103</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="gallery-hero">
+      <div class="container">
+        <div class="gallery-hero-content">
+          <div class="eyebrow">Shop Gallery</div>
+          <h1>European Auto <span>Service Gallery.</span></h1>
+          <p>
+            A preview layout for European vehicle service, diagnostics, brakes, tires, maintenance,
+            and repair work. These are temporary stock placeholders and can be replaced with real shop photos.
+          </p>
+          <div class="hero-buttons">
+            <a href="index.html#service-request" class="btn btn-primary">Request Service</a>
+            <a href="tel:16478958103" class="btn btn-outline">Call 647-895-8103</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <div class="container">
+        <div class="section-head-row">
+          <div>
+            <div class="eyebrow">Preview Work Gallery</div>
+            <h2 class="section-title">European Cars, Diagnostics & Repairs</h2>
+            <p class="section-copy light-copy">
+              This gallery is set up with a consistent 4:3 image ratio so the client can easily replace each image with real shop photos later.
+            </p>
+          </div>
+
+          <a href="index.html#service-request" class="btn btn-primary">Book A Repair</a>
+        </div>
+
+        <div class="gallery-grid">
+          <article class="gallery-card">
+            <div class="gallery-image">
+              <img src="https://source.unsplash.com/900x675/?audi,workshop,car&sig=1" alt="Audi in a clean workshop diagnostic bay" loading="lazy" decoding="async" />
+            </div>
+            <div class="gallery-card-body">
+              <h2>Audi Diagnostic Bay</h2>
+              <p>Audi in a clean workshop diagnostic bay. Replace with the shop's actual photo when ready.</p>
+            </div>
+          </article>
+          <article class="gallery-card">
+            <div class="gallery-image">
+              <img src="https://source.unsplash.com/900x675/?european-car,engine,mechanic&sig=2" alt="Engine bay inspection and maintenance placeholder" loading="lazy" decoding="async" />
+            </div>
+            <div class="gallery-card-body">
+              <h2>European Engine Service</h2>
+              <p>Engine bay inspection and maintenance placeholder. Replace with the shop's actual photo when ready.</p>
+            </div>
+          </article>
+          <article class="gallery-card">
+            <div class="gallery-image">
+              <img src="https://source.unsplash.com/900x675/?car,brakes,mechanic&sig=3" alt="Brake and wheel service placeholder image" loading="lazy" decoding="async" />
+            </div>
+            <div class="gallery-card-body">
+              <h2>Brake Service Detail</h2>
+              <p>Brake and wheel service placeholder image. Replace with the shop's actual photo when ready.</p>
+            </div>
+          </article>
+          <article class="gallery-card">
+            <div class="gallery-image">
+              <img src="https://source.unsplash.com/900x675/?bmw,workshop,car&sig=4" alt="BMW service placeholder for European repairs" loading="lazy" decoding="async" />
+            </div>
+            <div class="gallery-card-body">
+              <h2>BMW Workshop Service</h2>
+              <p>BMW service placeholder for European repairs. Replace with the shop's actual photo when ready.</p>
+            </div>
+          </article>
+          <article class="gallery-card">
+            <div class="gallery-image">
+              <img src="https://source.unsplash.com/900x675/?mercedes,workshop,car&sig=5" alt="Mercedes-Benz maintenance placeholder image" loading="lazy" decoding="async" />
+            </div>
+            <div class="gallery-card-body">
+              <h2>Mercedes Maintenance</h2>
+              <p>Mercedes-Benz maintenance placeholder image. Replace with the shop's actual photo when ready.</p>
+            </div>
+          </article>
+          <article class="gallery-card">
+            <div class="gallery-image">
+              <img src="https://source.unsplash.com/900x675/?volkswagen,garage,car&sig=6" alt="Volkswagen service placeholder image" loading="lazy" decoding="async" />
+            </div>
+            <div class="gallery-card-body">
+              <h2>Volkswagen Service</h2>
+              <p>Volkswagen service placeholder image. Replace with the shop's actual photo when ready.</p>
+            </div>
+          </article>
+          <article class="gallery-card">
+            <div class="gallery-image">
+              <img src="https://source.unsplash.com/900x675/?porsche,workshop,car&sig=7" alt="Porsche inspection placeholder image" loading="lazy" decoding="async" />
+            </div>
+            <div class="gallery-card-body">
+              <h2>Porsche Inspection</h2>
+              <p>Porsche inspection placeholder image. Replace with the shop's actual photo when ready.</p>
+            </div>
+          </article>
+          <article class="gallery-card">
+            <div class="gallery-image">
+              <img src="https://source.unsplash.com/900x675/?mini-cooper,garage,car&sig=8" alt="MINI Cooper service placeholder image" loading="lazy" decoding="async" />
+            </div>
+            <div class="gallery-card-body">
+              <h2>MINI Cooper Service</h2>
+              <p>MINI Cooper service placeholder image. Replace with the shop's actual photo when ready.</p>
+            </div>
+          </article>
+          <article class="gallery-card">
+            <div class="gallery-image">
+              <img src="https://source.unsplash.com/900x675/?land-rover,workshop,car&sig=9" alt="Land Rover service placeholder image" loading="lazy" decoding="async" />
+            </div>
+            <div class="gallery-card-body">
+              <h2>Land Rover Repair</h2>
+              <p>Land Rover service placeholder image. Replace with the shop's actual photo when ready.</p>
+            </div>
+          </article>
+          <article class="gallery-card">
+            <div class="gallery-image">
+              <img src="https://source.unsplash.com/900x675/?jaguar,garage,car&sig=10" alt="Jaguar service placeholder image" loading="lazy" decoding="async" />
+            </div>
+            <div class="gallery-card-body">
+              <h2>Jaguar Service</h2>
+              <p>Jaguar service placeholder image. Replace with the shop's actual photo when ready.</p>
+            </div>
+          </article>
+          <article class="gallery-card">
+            <div class="gallery-image">
+              <img src="https://source.unsplash.com/900x675/?car,tire,mechanic&sig=11" alt="Wheel and tire service placeholder image" loading="lazy" decoding="async" />
+            </div>
+            <div class="gallery-card-body">
+              <h2>Tire &amp; Wheel Work</h2>
+              <p>Wheel and tire service placeholder image. Replace with the shop's actual photo when ready.</p>
+            </div>
+          </article>
+          <article class="gallery-card">
+            <div class="gallery-image">
+              <img src="https://source.unsplash.com/900x675/?car,suspension,mechanic&sig=12" alt="Suspension and undercarriage placeholder image" loading="lazy" decoding="async" />
+            </div>
+            <div class="gallery-card-body">
+              <h2>Suspension Repair</h2>
+              <p>Suspension and undercarriage placeholder image. Replace with the shop's actual photo when ready.</p>
+            </div>
+          </article>
+          <article class="gallery-card">
+            <div class="gallery-image">
+              <img src="https://source.unsplash.com/900x675/?oil-change,mechanic,car&sig=13" alt="Oil change and maintenance placeholder image" loading="lazy" decoding="async" />
+            </div>
+            <div class="gallery-card-body">
+              <h2>Oil Service</h2>
+              <p>Oil change and maintenance placeholder image. Replace with the shop's actual photo when ready.</p>
+            </div>
+          </article>
+          <article class="gallery-card">
+            <div class="gallery-image">
+              <img src="https://source.unsplash.com/900x675/?automotive,diagnostics,mechanic&sig=14" alt="Automotive diagnostics placeholder image" loading="lazy" decoding="async" />
+            </div>
+            <div class="gallery-card-body">
+              <h2>Diagnostic Scan</h2>
+              <p>Automotive diagnostics placeholder image. Replace with the shop's actual photo when ready.</p>
+            </div>
+          </article>
+          <article class="gallery-card">
+            <div class="gallery-image">
+              <img src="https://source.unsplash.com/900x675/?european-car,service,garage&sig=15" alt="European vehicle service placeholder image" loading="lazy" decoding="async" />
+            </div>
+            <div class="gallery-card-body">
+              <h2>European Performance Service</h2>
+              <p>European vehicle service placeholder image. Replace with the shop's actual photo when ready.</p>
+            </div>
+          </article>
+          <article class="gallery-card">
+            <div class="gallery-image">
+              <img src="https://source.unsplash.com/900x675/?auto-repair,shop,car&sig=16" alt="Clean auto repair shop placeholder image" loading="lazy" decoding="async" />
+            </div>
+            <div class="gallery-card-body">
+              <h2>Shop Detail</h2>
+              <p>Clean auto repair shop placeholder image. Replace with the shop's actual photo when ready.</p>
+            </div>
+          </article>
+          <article class="gallery-card">
+            <div class="gallery-image">
+              <img src="https://source.unsplash.com/900x675/?car-inspection,mechanic&sig=17" alt="Vehicle inspection placeholder image" loading="lazy" decoding="async" />
+            </div>
+            <div class="gallery-card-body">
+              <h2>Vehicle Inspection</h2>
+              <p>Vehicle inspection placeholder image. Replace with the shop's actual photo when ready.</p>
+            </div>
+          </article>
+          <article class="gallery-card">
+            <div class="gallery-image">
+              <img src="https://source.unsplash.com/900x675/?engine,car,garage&sig=18" alt="Engine bay review placeholder image" loading="lazy" decoding="async" />
+            </div>
+            <div class="gallery-card-body">
+              <h2>Engine Bay Review</h2>
+              <p>Engine bay review placeholder image. Replace with the shop's actual photo when ready.</p>
+            </div>
+          </article>
+          <article class="gallery-card">
+            <div class="gallery-image">
+              <img src="https://source.unsplash.com/900x675/?luxury-car,workshop&sig=19" alt="Finished vehicle service placeholder image" loading="lazy" decoding="async" />
+            </div>
+            <div class="gallery-card-body">
+              <h2>Road-Ready Service</h2>
+              <p>Finished vehicle service placeholder image. Replace with the shop's actual photo when ready.</p>
+            </div>
+          </article>
+          <article class="gallery-card">
+            <div class="gallery-image">
+              <img src="https://source.unsplash.com/900x675/?european-car,auto-repair&sig=20" alt="Replaceable stock image placeholder" loading="lazy" decoding="async" />
+            </div>
+            <div class="gallery-card-body">
+              <h2>Client Preview Image</h2>
+              <p>Replaceable stock image placeholder. Replace with the shop's actual photo when ready.</p>
+            </div>
+          </article>
+        </div>
+
+        <p class="gallery-note">
+          Placeholder images are loaded from remote stock-style image URLs for layout preview only. Replace each image URL with real shop photos before final publishing if the client wants only actual work shown.
+        </p>
+      </div>
+    </section>
+
+    <section class="brand-banner brand-marquee" aria-label="European brands serviced">
+      <div class="banner-title container">
+        <span></span>
+        <strong>We service & repair leading European brands</strong>
+        <span></span>
+      </div>
+
+      <div class="brand-marquee-window">
+        <div class="brand-marquee-track">
+          <div class="brand-logo audi-logo"><img src="./assets/imgs/audi.png" alt="Audi repair and service in Scarborough" /></div>
+          <div class="brand-logo bmw-logo"><img src="./assets/imgs/bmw.png" alt="BMW repair and service in Scarborough" /></div>
+          <div class="brand-logo mercedes-logo"><img src="./assets/imgs/mercedes.png" alt="Mercedes-Benz repair and service in Scarborough" /></div>
+          <div class="brand-logo volkswagen-logo"><img src="./assets/imgs/volkswagen.png" alt="Volkswagen repair and service in Scarborough" /></div>
+          <div class="brand-logo volvo-logo"><img src="./assets/imgs/volvo.png" alt="Volvo repair and service in Scarborough" /></div>
+          <div class="brand-logo mini-logo"><img src="./assets/imgs/minicooper.png" alt="MINI Cooper repair and service in Scarborough" /></div>
+          <div class="brand-logo landrover-logo"><img src="./assets/imgs/landrover.png" alt="Land Rover repair and service in Scarborough" /></div>
+          <div class="brand-logo jaguar-logo"><img src="./assets/imgs/jaguar.png" alt="Jaguar repair and service in Scarborough" /></div>
+          <div class="brand-logo porsche-logo"><img src="./assets/imgs/porche.png" alt="Porsche repair and service in Scarborough" /></div>
+          <div class="brand-logo audi-logo" aria-hidden="true"><img src="./assets/imgs/audi.png" alt="" /></div>
+          <div class="brand-logo bmw-logo" aria-hidden="true"><img src="./assets/imgs/bmw.png" alt="" /></div>
+          <div class="brand-logo mercedes-logo" aria-hidden="true"><img src="./assets/imgs/mercedes.png" alt="" /></div>
+          <div class="brand-logo volkswagen-logo" aria-hidden="true"><img src="./assets/imgs/volkswagen.png" alt="" /></div>
+          <div class="brand-logo volvo-logo" aria-hidden="true"><img src="./assets/imgs/volvo.png" alt="" /></div>
+          <div class="brand-logo mini-logo" aria-hidden="true"><img src="./assets/imgs/minicooper.png" alt="" /></div>
+          <div class="brand-logo landrover-logo" aria-hidden="true"><img src="./assets/imgs/landrover.png" alt="" /></div>
+          <div class="brand-logo jaguar-logo" aria-hidden="true"><img src="./assets/imgs/jaguar.png" alt="" /></div>
+          <div class="brand-logo porsche-logo" aria-hidden="true"><img src="./assets/imgs/porche.png" alt="" /></div>
+        </div>
+      </div>
+
+      <p class="make-disclaimer container">
+        Brand logos are used only to identify vehicle makes serviced. INLINE 5 AUTO INC is an independent auto repair shop and is not affiliated with or endorsed by these manufacturers.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-card-feature">
+        <div class="footer-card-copy">
+          <div class="eyebrow">Contact Inline 5 Auto Inc</div>
+          <h2>Book Your Vehicle Service</h2>
+          <p>
+            Certified auto repair, honest diagnostics, and dependable Audi and European vehicle service in Scarborough.
+          </p>
+          <a href="index.html#service-request" class="btn btn-primary">Send Service Request</a>
+        </div>
+
+        <div class="footer-business-card">
+          <img
+            src="./assets/imgs/Inline5autocard.png"
+            alt="INLINE 5 AUTO INC business card with contact details"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>
+          © 2026 INLINE 5 AUTO INC. All Rights Reserved.
+          Website by <a href="https://northfolkstudio.com" target="_blank" rel="noopener">NorthfolkStudio</a>.
+        </span>
+        <a href="/">Back to Home</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-call-bar">
+    <a href="tel:16478958103">Call Shop</a>
+    <a href="index.html#service-request">Request Service</a>
+  </div>
+
+  <script>
+    const header = document.getElementById("header");
+    const menuToggle = document.getElementById("menuToggle");
+    const mobilePanel = document.getElementById("mobilePanel");
+
+    function updateHeaderState() {
+      header.classList.toggle("scrolled", window.scrollY > 20);
+    }
+
+    updateHeaderState();
+    window.addEventListener("scroll", updateHeaderState, { passive: true });
+
+    if (menuToggle && mobilePanel) {
+      menuToggle.addEventListener("click", () => {
+        const isOpen = mobilePanel.classList.toggle("open");
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+      });
+
+      mobilePanel.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobilePanel.classList.remove("open");
+          menuToggle.setAttribute("aria-expanded", "false");
+        });
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && mobilePanel.classList.contains("open")) {
+          mobilePanel.classList.remove("open");
+          menuToggle.setAttribute("aria-expanded", "false");
+          menuToggle.focus();
+        }
+      });
+    }
+  </script>
+</body>
+</html>
