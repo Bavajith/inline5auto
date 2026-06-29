@@ -1216,6 +1216,15 @@ textarea:focus-visible {
     scroll-padding-top: 86px;
   }
 
+  .nav-logo {
+    width: 125px;
+  }
+
+  body {
+    overflow-x: hidden;
+    padding-bottom: 84px;
+  }
+
   body {
     overflow-x: hidden;
     padding-bottom: 84px;
@@ -1249,6 +1258,13 @@ textarea:focus-visible {
     font-size: 10px;
     letter-spacing: 0.14em;
   }
+
+.nav-logo {
+  width: 170px;
+  max-height: 46px;
+  object-fit: contain;
+  display: block;
+}
 
   .nav-actions .btn {
     display: none;
