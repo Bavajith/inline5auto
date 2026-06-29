@@ -1378,8 +1378,10 @@ body {
   }
 
 .hero-bg img {
+  content: url("../imgs/mobilehero.png");
   height: 100%;
-  object-position: 68% center;
+  object-fit: cover;
+  object-position: center center;
   opacity: 1;
   filter: saturate(1.05) contrast(1.06) brightness(0.94);
 }
@@ -1705,7 +1707,7 @@ body {
     object-position: center top;
   }
 
-  .location {
-    background-position: 35% center;
-  }
+.location {
+  background: url("../imgs/mobilefooter.png") center center / cover no-repeat;
+}
 }
