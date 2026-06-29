@@ -205,6 +205,84 @@ textarea:focus-visible {
   min-width: max-content;
 }
 
+.nav-logo {
+  width: 215px;
+  max-height: 58px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  flex: 0 0 auto;
+}
+
+.nav-dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.nav-dropdown-toggle::after {
+  content: "▾";
+  font-size: 9px;
+  margin-left: 6px;
+  color: #4da5ff;
+}
+
+.nav-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(0);
+  min-width: 230px;
+  padding: 10px;
+  background: rgba(5, 9, 20, 0.98);
+  border: 1px solid rgba(147, 197, 253, 0.18);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.38);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.16s ease, visibility 0.16s ease;
+  backdrop-filter: blur(18px);
+  z-index: 90;
+}
+
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown:focus-within .nav-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+
+.nav-dropdown-menu::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -12px;
+  height: 12px;
+}
+
+.nav-dropdown-menu a {
+  display: block;
+  padding: 12px 14px;
+  white-space: nowrap;
+  font-size: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nav-dropdown-menu a:last-child {
+  border-bottom: 0;
+}
+
+.nav-dropdown-menu a::after {
+  display: none;
+}
+
+.nav-dropdown-menu a:hover {
+  color: #69b7ff;
+  background: rgba(255, 255, 255, 0.045);
+}
+
 .brand-text strong {
   display: block;
   color: white;
@@ -1212,15 +1290,22 @@ textarea:focus-visible {
 }
 
 @media (max-width: 768px) {
+  .nav-logo {
+    width: 150px;
+    max-height: 42px;
+  }
+
+  .mobile-sub-link {
+    padding-left: 18px !important;
+    color: #69b7ff !important;
+    font-size: 12px !important;
+    border-bottom-color: rgba(105, 183, 255, 0.12) !important;
+  }
+
   html {
     scroll-padding-top: 86px;
   }
-
-  .nav-logo {
-    width: 125px;
-  }
-
-  body {
+body {
     overflow-x: hidden;
     padding-bottom: 84px;
   }
@@ -1258,15 +1343,7 @@ textarea:focus-visible {
     font-size: 10px;
     letter-spacing: 0.14em;
   }
-
-.nav-logo {
-  width: 170px;
-  max-height: 46px;
-  object-fit: contain;
-  display: block;
-}
-
-  .nav-actions .btn {
+.nav-actions .btn {
     display: none;
   }
 
@@ -1620,5 +1697,15 @@ textarea:focus-visible {
     animation-duration: 0.001ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-image img {
+    object-position: center top;
+  }
+
+  .location {
+    background-position: 35% center;
   }
 }

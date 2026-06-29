@@ -76,6 +76,7 @@
   </script>
 
   <style>
+
     .gallery-hero {
       min-height: 560px;
       padding: 124px 0 78px;
@@ -194,6 +195,7 @@
     }
 
     @media (max-width: 768px) {
+
       .gallery-hero {
         min-height: auto;
         padding: 118px 0 58px;
@@ -218,25 +220,38 @@
 <body>
   <header class="header" id="header">
     <div class="container nav">
-      <a href="/" class="brand" aria-label="INLINE 5 AUTO INC Home">
-        <span class="brand-text">
-          <strong>INLINE 5</strong>
-          <span>Auto Inc</span>
-        </span>
+      <a href="./index.html" class="brand" aria-label="INLINE 5 AUTO INC Home">
+        <img
+          src="./assets/imgs/InlineLogo.png"
+          alt="INLINE 5 AUTO INC"
+          class="nav-logo"
+          width="1136"
+          height="294"
+          decoding="async"
+        />
       </a>
 
       <nav class="nav-links" aria-label="Primary navigation">
-        <a href="/">Home</a>
-        <a href="/#about">About</a>
-        <a href="/#services">Services</a>
-        <a href="/gallery.html">Gallery</a>
-        <a href="/#service-request">Request Service</a>
-        <a href="/#reviews">Reviews</a>
-        <a href="/#location">Location</a>
+        <a href="./index.html#home">Home</a>
+        <a href="./index.html#about">About</a>
+        <div class="nav-dropdown">
+          <a href="./index.html#services" class="nav-dropdown-toggle">Services</a>
+          <div class="nav-dropdown-menu" aria-label="Service pages">
+            <a href="./audi-service-scarborough.html">Audi Service</a>
+            <a href="./brake-service-scarborough.html">Brake Service</a>
+            <a href="./auto-diagnostics-scarborough.html">Diagnostics</a>
+            <a href="./oil-change-scarborough.html">Oil Changes</a>
+            <a href="./tire-service-scarborough.html">Tire Service</a>
+          </div>
+        </div>
+        <a href="./gallery.html">Gallery</a>
+        <a href="./index.html#service-request">Request Service</a>
+        <a href="./index.html#reviews">Reviews</a>
+        <a href="./index.html#location">Location</a>
       </nav>
 
       <div class="nav-actions">
-        <a class="btn btn-primary" href="/#service-request">Request Service</a>
+        <a class="btn btn-primary" href="./index.html#service-request">Request Service</a>
 
         <button
           class="menu-toggle"
@@ -253,13 +268,18 @@
     </div>
 
     <div class="mobile-panel" id="mobilePanel">
-      <a href="/">Home</a>
-      <a href="/#about">About</a>
-      <a href="/#services">Services</a>
-      <a href="/gallery.html">Gallery</a>
-      <a href="/#service-request">Request Service</a>
-      <a href="/#reviews">Reviews</a>
-      <a href="/#location">Location</a>
+      <a href="./index.html#home">Home</a>
+      <a href="./index.html#about">About</a>
+      <a href="./index.html#services">Services</a>
+      <a class="mobile-sub-link" href="./audi-service-scarborough.html">Audi Service</a>
+      <a class="mobile-sub-link" href="./brake-service-scarborough.html">Brake Service</a>
+      <a class="mobile-sub-link" href="./auto-diagnostics-scarborough.html">Diagnostics</a>
+      <a class="mobile-sub-link" href="./oil-change-scarborough.html">Oil Changes</a>
+      <a class="mobile-sub-link" href="./tire-service-scarborough.html">Tire Service</a>
+      <a href="./gallery.html">Gallery</a>
+      <a href="./index.html#service-request">Request Service</a>
+      <a href="./index.html#reviews">Reviews</a>
+      <a href="./index.html#location">Location</a>
       <a href="tel:16478958103">Call 647-895-8103</a>
     </div>
   </header>
@@ -271,11 +291,11 @@
           <div class="eyebrow">Shop Gallery</div>
           <h1>European Auto <span>Service Gallery.</span></h1>
           <p>
-            A preview layout for European vehicle service, diagnostics, brakes, tires, maintenance,
-            and repair work. These are temporary stock placeholders and can be replaced with real shop photos.
+            A real look inside INLINE 5 AUTO INC — Audi service, diagnostics, oil changes,
+            EV battery work, and hands-on repairs completed by Suthan in Scarborough.
           </p>
           <div class="hero-buttons">
-            <a href="/#service-request" class="btn btn-primary">Request Service</a>
+            <a href="./index.html#service-request" class="btn btn-primary">Request Service</a>
             <a href="tel:16478958103" class="btn btn-outline">Call 647-895-8103</a>
           </div>
         </div>
@@ -286,201 +306,75 @@
       <div class="container">
         <div class="section-head-row">
           <div>
-            <div class="eyebrow">Preview Work Gallery</div>
+            <div class="eyebrow">Real Work Gallery</div>
             <h2 class="section-title">European Cars, Diagnostics & Repairs</h2>
             <p class="section-copy light-copy">
-              This gallery is set up with a consistent 4:3 image ratio so the client can easily replace each image with real shop photos later.
+              A selection of actual shop photos showing Suthan’s work, European vehicle service, Porsche oil maintenance, and diagnostic repair capability.
             </p>
           </div>
 
-          <a href="/#service-request" class="btn btn-primary">Book A Repair</a>
+          <a href="./index.html#service-request" class="btn btn-primary">Book A Repair</a>
         </div>
 
         <div class="gallery-grid">
           <article class="gallery-card">
             <div class="gallery-image">
-              <img src="https://source.unsplash.com/900x675/?audi,workshop,car&sig=1" alt="Audi in a clean workshop diagnostic bay" loading="lazy" decoding="async"  width="900" height="675" />
+              <img src="./assets/imgs/gallery-suthan-audi.webp" alt="Suthan M. with an Audi engine bay at INLINE 5 AUTO INC" loading="lazy" decoding="async" width="1200" height="900" />
             </div>
             <div class="gallery-card-body">
-              <h2>Audi Diagnostic Bay</h2>
-              <p>Audi in a clean workshop diagnostic bay. Replace with the shop's actual photo when ready.</p>
+              <h2>Audi Specialist Work</h2>
+              <p>Suthan M. in the shop with an Audi engine bay, showing the hands-on experience behind INLINE 5 AUTO INC.</p>
             </div>
           </article>
           <article class="gallery-card">
             <div class="gallery-image">
-              <img src="https://source.unsplash.com/900x675/?european-car,engine,mechanic&sig=2" alt="Engine bay inspection and maintenance placeholder" loading="lazy" decoding="async"  width="900" height="675" />
+              <img src="./assets/imgs/gallery-ev-battery-service.webp" alt="Suthan working on EV battery service at INLINE 5 AUTO INC" loading="lazy" decoding="async" width="1200" height="900" />
             </div>
             <div class="gallery-card-body">
-              <h2>European Engine Service</h2>
-              <p>Engine bay inspection and maintenance placeholder. Replace with the shop's actual photo when ready.</p>
+              <h2>EV Battery Service</h2>
+              <p>High-voltage and EV-related service work completed in a professional workshop environment.</p>
             </div>
           </article>
           <article class="gallery-card">
             <div class="gallery-image">
-              <img src="https://source.unsplash.com/900x675/?car,brakes,mechanic&sig=3" alt="Brake and wheel service placeholder image" loading="lazy" decoding="async"  width="900" height="675" />
+              <img src="./assets/imgs/gallery-motul-oil-pour.webp" alt="Motul oil being poured during a Porsche oil service" loading="lazy" decoding="async" width="1200" height="900" />
             </div>
             <div class="gallery-card-body">
-              <h2>Brake Service Detail</h2>
-              <p>Brake and wheel service placeholder image. Replace with the shop's actual photo when ready.</p>
+              <h2>Motul Oil Service</h2>
+              <p>Quality oil service using Motul engine oil for European vehicle maintenance.</p>
             </div>
           </article>
           <article class="gallery-card">
             <div class="gallery-image">
-              <img src="https://source.unsplash.com/900x675/?bmw,workshop,car&sig=4" alt="BMW service placeholder for European repairs" loading="lazy" decoding="async"  width="900" height="675" />
+              <img src="./assets/imgs/gallery-porsche-motul-oil.webp" alt="Motul 8100 oil on a Porsche engine cover" loading="lazy" decoding="async" width="1200" height="900" />
             </div>
             <div class="gallery-card-body">
-              <h2>BMW Workshop Service</h2>
-              <p>BMW service placeholder for European repairs. Replace with the shop's actual photo when ready.</p>
+              <h2>Porsche Oil Maintenance</h2>
+              <p>Porsche maintenance using Motul 8100 X-cess gen2 synthetic motor oil.</p>
             </div>
           </article>
           <article class="gallery-card">
             <div class="gallery-image">
-              <img src="https://source.unsplash.com/900x675/?mercedes,workshop,car&sig=5" alt="Mercedes-Benz maintenance placeholder image" loading="lazy" decoding="async"  width="900" height="675" />
+              <img src="./assets/imgs/gallery-oil-service-closeup.webp" alt="Close-up Motul oil service at INLINE 5 AUTO INC" loading="lazy" decoding="async" width="1200" height="900" />
             </div>
             <div class="gallery-card-body">
-              <h2>Mercedes Maintenance</h2>
-              <p>Mercedes-Benz maintenance placeholder image. Replace with the shop's actual photo when ready.</p>
+              <h2>Oil Change Detail</h2>
+              <p>Close-up view of a clean oil service with attention to proper maintenance details.</p>
             </div>
           </article>
           <article class="gallery-card">
             <div class="gallery-image">
-              <img src="https://source.unsplash.com/900x675/?volkswagen,garage,car&sig=6" alt="Volkswagen service placeholder image" loading="lazy" decoding="async"  width="900" height="675" />
+              <img src="./assets/imgs/gallery-shop-owner-original.webp" alt="Suthan M. working in the shop on EV components" loading="lazy" decoding="async" width="1200" height="900" />
             </div>
             <div class="gallery-card-body">
-              <h2>Volkswagen Service</h2>
-              <p>Volkswagen service placeholder image. Replace with the shop's actual photo when ready.</p>
-            </div>
-          </article>
-          <article class="gallery-card">
-            <div class="gallery-image">
-              <img src="https://source.unsplash.com/900x675/?porsche,workshop,car&sig=7" alt="Porsche inspection placeholder image" loading="lazy" decoding="async"  width="900" height="675" />
-            </div>
-            <div class="gallery-card-body">
-              <h2>Porsche Inspection</h2>
-              <p>Porsche inspection placeholder image. Replace with the shop's actual photo when ready.</p>
-            </div>
-          </article>
-          <article class="gallery-card">
-            <div class="gallery-image">
-              <img src="https://source.unsplash.com/900x675/?mini-cooper,garage,car&sig=8" alt="MINI Cooper service placeholder image" loading="lazy" decoding="async"  width="900" height="675" />
-            </div>
-            <div class="gallery-card-body">
-              <h2>MINI Cooper Service</h2>
-              <p>MINI Cooper service placeholder image. Replace with the shop's actual photo when ready.</p>
-            </div>
-          </article>
-          <article class="gallery-card">
-            <div class="gallery-image">
-              <img src="https://source.unsplash.com/900x675/?land-rover,workshop,car&sig=9" alt="Land Rover service placeholder image" loading="lazy" decoding="async"  width="900" height="675" />
-            </div>
-            <div class="gallery-card-body">
-              <h2>Land Rover Repair</h2>
-              <p>Land Rover service placeholder image. Replace with the shop's actual photo when ready.</p>
-            </div>
-          </article>
-          <article class="gallery-card">
-            <div class="gallery-image">
-              <img src="https://source.unsplash.com/900x675/?jaguar,garage,car&sig=10" alt="Jaguar service placeholder image" loading="lazy" decoding="async"  width="900" height="675" />
-            </div>
-            <div class="gallery-card-body">
-              <h2>Jaguar Service</h2>
-              <p>Jaguar service placeholder image. Replace with the shop's actual photo when ready.</p>
-            </div>
-          </article>
-          <article class="gallery-card">
-            <div class="gallery-image">
-              <img src="https://source.unsplash.com/900x675/?car,tire,mechanic&sig=11" alt="Wheel and tire service placeholder image" loading="lazy" decoding="async"  width="900" height="675" />
-            </div>
-            <div class="gallery-card-body">
-              <h2>Tire &amp; Wheel Work</h2>
-              <p>Wheel and tire service placeholder image. Replace with the shop's actual photo when ready.</p>
-            </div>
-          </article>
-          <article class="gallery-card">
-            <div class="gallery-image">
-              <img src="https://source.unsplash.com/900x675/?car,suspension,mechanic&sig=12" alt="Suspension and undercarriage placeholder image" loading="lazy" decoding="async"  width="900" height="675" />
-            </div>
-            <div class="gallery-card-body">
-              <h2>Suspension Repair</h2>
-              <p>Suspension and undercarriage placeholder image. Replace with the shop's actual photo when ready.</p>
-            </div>
-          </article>
-          <article class="gallery-card">
-            <div class="gallery-image">
-              <img src="https://source.unsplash.com/900x675/?oil-change,mechanic,car&sig=13" alt="Oil change and maintenance placeholder image" loading="lazy" decoding="async"  width="900" height="675" />
-            </div>
-            <div class="gallery-card-body">
-              <h2>Oil Service</h2>
-              <p>Oil change and maintenance placeholder image. Replace with the shop's actual photo when ready.</p>
-            </div>
-          </article>
-          <article class="gallery-card">
-            <div class="gallery-image">
-              <img src="https://source.unsplash.com/900x675/?automotive,diagnostics,mechanic&sig=14" alt="Automotive diagnostics placeholder image" loading="lazy" decoding="async"  width="900" height="675" />
-            </div>
-            <div class="gallery-card-body">
-              <h2>Diagnostic Scan</h2>
-              <p>Automotive diagnostics placeholder image. Replace with the shop's actual photo when ready.</p>
-            </div>
-          </article>
-          <article class="gallery-card">
-            <div class="gallery-image">
-              <img src="https://source.unsplash.com/900x675/?european-car,service,garage&sig=15" alt="European vehicle service placeholder image" loading="lazy" decoding="async"  width="900" height="675" />
-            </div>
-            <div class="gallery-card-body">
-              <h2>European Performance Service</h2>
-              <p>European vehicle service placeholder image. Replace with the shop's actual photo when ready.</p>
-            </div>
-          </article>
-          <article class="gallery-card">
-            <div class="gallery-image">
-              <img src="https://source.unsplash.com/900x675/?auto-repair,shop,car&sig=16" alt="Clean auto repair shop placeholder image" loading="lazy" decoding="async"  width="900" height="675" />
-            </div>
-            <div class="gallery-card-body">
-              <h2>Shop Detail</h2>
-              <p>Clean auto repair shop placeholder image. Replace with the shop's actual photo when ready.</p>
-            </div>
-          </article>
-          <article class="gallery-card">
-            <div class="gallery-image">
-              <img src="https://source.unsplash.com/900x675/?car-inspection,mechanic&sig=17" alt="Vehicle inspection placeholder image" loading="lazy" decoding="async"  width="900" height="675" />
-            </div>
-            <div class="gallery-card-body">
-              <h2>Vehicle Inspection</h2>
-              <p>Vehicle inspection placeholder image. Replace with the shop's actual photo when ready.</p>
-            </div>
-          </article>
-          <article class="gallery-card">
-            <div class="gallery-image">
-              <img src="https://source.unsplash.com/900x675/?engine,car,garage&sig=18" alt="Engine bay review placeholder image" loading="lazy" decoding="async"  width="900" height="675" />
-            </div>
-            <div class="gallery-card-body">
-              <h2>Engine Bay Review</h2>
-              <p>Engine bay review placeholder image. Replace with the shop's actual photo when ready.</p>
-            </div>
-          </article>
-          <article class="gallery-card">
-            <div class="gallery-image">
-              <img src="https://source.unsplash.com/900x675/?luxury-car,workshop&sig=19" alt="Finished vehicle service placeholder image" loading="lazy" decoding="async"  width="900" height="675" />
-            </div>
-            <div class="gallery-card-body">
-              <h2>Road-Ready Service</h2>
-              <p>Finished vehicle service placeholder image. Replace with the shop's actual photo when ready.</p>
-            </div>
-          </article>
-          <article class="gallery-card">
-            <div class="gallery-image">
-              <img src="https://source.unsplash.com/900x675/?european-car,auto-repair&sig=20" alt="Replaceable stock image placeholder" loading="lazy" decoding="async"  width="900" height="675" />
-            </div>
-            <div class="gallery-card-body">
-              <h2>Client Preview Image</h2>
-              <p>Replaceable stock image placeholder. Replace with the shop's actual photo when ready.</p>
+              <h2>Hands-On Diagnostics</h2>
+              <p>Suthan working directly on advanced vehicle components inside the shop.</p>
             </div>
           </article>
         </div>
 
         <p class="gallery-note">
-          Placeholder images are loaded from remote stock-style image URLs for layout preview only. Replace each image URL with real shop photos before final publishing if the client wants only actual work shown.
+          These are real shop photos prepared in a consistent 4:3 format for faster loading and a cleaner gallery layout.
         </p>
       </div>
     </section>
@@ -530,7 +424,7 @@
           <p>
             Certified auto repair, honest diagnostics, and dependable Audi and European vehicle service in Scarborough.
           </p>
-          <a href="/#service-request" class="btn btn-primary">Send Service Request</a>
+          <a href="./index.html#service-request" class="btn btn-primary">Send Service Request</a>
         </div>
 
         <div class="footer-business-card">
@@ -548,14 +442,14 @@
           © 2026 INLINE 5 AUTO INC. All Rights Reserved.
           Website by <a href="https://northfolkstudio.com" target="_blank" rel="noopener">NorthfolkStudio</a>.
         </span>
-        <a href="/">Back to Home</a>
+        <a href="./index.html">Back to Home</a>
       </div>
     </div>
   </footer>
 
   <div class="mobile-call-bar">
     <a href="tel:16478958103">Call Shop</a>
-    <a href="/#service-request">Request Service</a>
+    <a href="./index.html#service-request">Request Service</a>
   </div>
 
   <script>
